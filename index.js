@@ -29,6 +29,10 @@ app.get('/abcd', (req, res) => {
   res.send('<h1>efg</h1>')
 })
 
+app.get('/some', (req, res) => {
+  res.send('<h1>thing</h1>')
+})
+
 
 const PORT = 8080
 
