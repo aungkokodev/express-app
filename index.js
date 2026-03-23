@@ -33,6 +33,10 @@ app.get('/some', (req, res) => {
   res.send('<h1>thing</h1>')
 })
 
+app.get('/air', (req, res) => {
+  res.send('<h1>air</h1>')
+})
+
 
 const PORT = 8080
 
