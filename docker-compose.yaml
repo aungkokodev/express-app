@@ -2,12 +2,15 @@ services:
   watchtower:
     image: nickfedor/watchtower
     container_name: watchtower
+    restart: unless-stopped
     environment:
       - WATCHTOWER_POLL_INTERVAL=60
+      - WATCHTOWER_CLEANUP=true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   express:
     image: aungkokoepic/express-app:latest
     container_name: express
+    restart: unless-stopped
     ports:
       - 8080:8080

@@ -13,6 +13,14 @@ app.get('/greet', (req, res) => {
   res.send('<h1>Hello!</h1>')
 })
 
+app.get('/ding', (req, res) => {
+  res.send('<h1>Dong</h1>')
+})
+
+app.get('/test', (req, res) => {
+  res.send('<h1>Hello World!</h1>')
+})
+
 
 const PORT = 8080
 
