@@ -6,10 +6,11 @@ services:
     environment:
       - WATCHTOWER_POLL_INTERVAL=60
       - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_DEBUG=true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   express:
-    image: aungkokoepic/express-app:latest
+    image: aungkokoepic/express-app
     container_name: express
     restart: unless-stopped
     ports:
