@@ -45,6 +45,10 @@ app.get('/earth', (req, res) => {
   res.send('<h1>earth</h1>')
 })
 
+app.get('/water', (req, res) => {
+  res.send('<h1>water</h1>')
+})
+
 const PORT = 8080
 
 app.listen(PORT, () => {
