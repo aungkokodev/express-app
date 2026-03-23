@@ -49,6 +49,10 @@ app.get('/water', (req, res) => {
   res.send('<h1>water</h1>')
 })
 
+app.get('/gg', (req, res) => {
+  res.send('<h1>good game</h1>')
+})
+
 const PORT = 8080
 
 app.listen(PORT, () => {
