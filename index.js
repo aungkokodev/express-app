@@ -9,6 +9,10 @@ app.get('/ping', (req, res) => {
   res.send('<h>Pong</h1>')
 })
 
+app.get('/greet', (req, res) => {
+  res.send('<h1>Hello!</h1>')
+})
+
 
 const PORT = 8080
 
