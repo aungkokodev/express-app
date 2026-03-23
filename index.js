@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/ping', (req, res) => {
-  res.send('<h>Pong</h1>')
+  res.send('<h1>Pong</h1>')
 })
 
 app.get('/greet', (req, res) => {
@@ -19,6 +19,10 @@ app.get('/ding', (req, res) => {
 
 app.get('/test', (req, res) => {
   res.send('<h1>Hello World!</h1>')
+})
+
+app.get('/king', (req, res) => {
+  res.send('<h1>Kong</h1>')
 })
 
 
