@@ -56,6 +56,11 @@ app.get('/gg', (req, res) => {
 app.get('/cc', (req, res) => {
 	res.send('nothing special');
 })
+
+app.get('/afk', (req, res) => {
+	res.send('away from keyboard');
+})
+
 const PORT = 8080
 
 app.listen(PORT, () => {
