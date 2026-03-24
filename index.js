@@ -53,6 +53,9 @@ app.get('/gg', (req, res) => {
   res.send('<h1>good game</h1>')
 })
 
+app.get('/cc', (req, res) => {
+	res.send('nothing special');
+})
 const PORT = 8080
 
 app.listen(PORT, () => {
