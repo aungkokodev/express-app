@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 
+app.get('/ping', (req, res) => {
+  res.send('<h1>Pong</h1>')
+})
+
 const PORT = 8080
 
 app.listen(PORT, () => {
